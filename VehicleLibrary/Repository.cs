@@ -8,5 +8,17 @@ namespace VehicleLibrary
 {
     public class Repository
     {
+        public int VehicleId { get; private set; }
+        public string VehicleType { get; private set; }
+        public DateTime EnterTime { get; private set; }
+        public DateTime ExitTime { get; private set; }
+
+        public Repository(int vehicleId, string vehicleType, DateTime enterTime, DateTime exitTime)
+        {
+            VehicleId = vehicleId;
+            VehicleType = vehicleType;
+            EnterTime = enterTime;
+            ExitTime = exitTime;
+        }
     }
 }
